@@ -22,7 +22,7 @@ import { join } from 'path';
 const SUPADATA_BASE = 'https://api.supadata.ai/v1';
 const X_API_BASE = 'https://api.x.com/2';
 const TWEET_LOOKBACK_HOURS = 24;
-const PODCAST_LOOKBACK_HOURS = 72;
+const PODCAST_LOOKBACK_HOURS = 168; // 1 week
 const BLOG_LOOKBACK_HOURS = 72;
 const MAX_TWEETS_PER_USER = 3;
 const MAX_ARTICLES_PER_BLOG = 3;
@@ -106,8 +106,8 @@ async function fetchYouTubeContent(podcasts, apiKey, state, errors) {
 
       console.error(`  ${podcast.name}: found ${regularIds.length} regular + ${liveIds.length} live video IDs`);
 
-      // Check first 2 videos per channel, skip already-seen ones
-      for (const videoId of videoIds.slice(0, 2)) {
+      // Check first 10 videos per channel, skip already-seen ones
+      for (const videoId of videoIds.slice(0, 10)) {
         if (state.seenVideos[videoId]) continue; // dedup
 
         try {
