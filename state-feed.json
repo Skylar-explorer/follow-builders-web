@@ -2,11 +2,11 @@
   "seenTweets": {},
   "seenVideos": {},
   "seenArticles": {
-    "https://www.anthropic.com/engineering/claude-code-auto-mode": 1779610877405,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1779788453979,
     "https://claude.com/blog/connectors-for-everyday-life": 1779788454701,
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1779874511347,
     "https://www.anthropic.com/engineering/managed-agents": 1779874516606,
-    "https://claude.com/blog/claude-managed-agents-updates": 1779874517270
+    "https://claude.com/blog/claude-managed-agents-updates": 1779874517270,
+    "https://claude.com/blog/new-in-claude-managed-agents": 1780216632498
   }
 }
